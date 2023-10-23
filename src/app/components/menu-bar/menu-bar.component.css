@@ -1,0 +1,186 @@
+.container-menu-bar  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center !important;
+}
+
+.container-menu-bar > ul > li {
+ margin-right: 15px;
+  list-style: none;
+}
+/* ----------------- Setup semua komponen header -----------------  */
+
+.headerarea{
+  padding:20px 0px 0px 0px;
+}
+
+.logo{
+  width: 40px !important;
+}
+
+.menu{
+  padding:30px 18px;
+}
+.menu a{
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-right: 40px;
+  color:white;
+  opacity: 0.5;
+}
+
+.whitetext{
+  color:#ffffff;
+}
+
+.menu a:hover{
+  opacity: 1;
+}
+
+.menu a.active{
+  opacity: 1;
+}
+
+.separatorheader{
+  height:16px;
+}
+
+.menulaindropdown{
+  position: absolute;
+  margin:-5px 0px 0px 652px;
+  background:#333;
+  display:none;
+  z-index:999999;
+}
+
+.whitebackground{
+  background:#fff;
+  box-shadow: 0px 15px 20px 0px rgba(64, 72, 82, 0.2);
+}
+
+.menulaindropdown a{
+  display: block;
+  padding:10px 40px 10px 20px;
+  border-top:1px solid rgba(255,255,255,0.1);
+  margin:0px;
+  opacity:0.8;
+}
+
+.whitebackground a{
+  display: block;
+  padding:10px 40px 10px 20px;
+  border-top:1px solid #e5e5e5;
+  margin:0px;
+  opacity:0.8;
+}
+
+.menulaindropdown a:hover{
+  background:rgba(255,255,255,0.1);
+}
+
+.whitebackground a:hover{
+  background:#f5f6f8;
+}
+
+.linksocialmedia {text-align: end; margin-top: 30px;}
+.linksocialmedia img{width: 22px;opacity:0.5;}
+.linksocialmedia a{margin-left:16px;}
+.linksocialmedia a:hover img{opacity:1;}
+
+/* -----------------  Setup burger menu -----------------  */
+
+.boxdropdownwhite{
+  background: #ffffff;
+  position:absolute;
+  bottom: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  display: none;
+  z-index:9;
+}
+
+.menuburger{
+   text-align: right;
+   padding:20px;
+}
+
+.menuburger img{
+   width:28px;
+   cursor: pointer;
+}
+
+.headermenumobile{
+   padding:0px;
+}
+
+.dropdown_menu a{
+   text-decoration: none;
+   color:rgba(0, 0, 0, 0.6);
+   font-size: 32px;
+   line-height: 42px;
+   padding:32px 0px 32px 32px;
+   display: block;
+   border-top:1px solid rgba(0, 0, 0, 0.1);
+   border-left:4px solid #ffffff;
+}
+
+.dropdown_menu a.active{
+  border-left:4px solid #121212;
+  color:rgba(0, 0, 0, 1);
+}
+
+.menudropdown_desc{
+   font-size: 16px;
+   line-height: 26px;
+   opacity:0.6;
+   padding-left:50px;
+   padding-top:4px;
+}
+
+.menudropdown_title{
+   padding-left:50px;
+}
+
+.arrowmenuleft{
+   position: absolute;
+}
+
+.a_menumobile{display: none;}
+
+.contactme{
+  text-decoration: none;
+  padding:10px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color:rgba(255,255,255);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:5px;
+}
+
+.contactme:hover{
+  background:rgba(255,255,255,0.1);
+  color:#ffffff;
+}
+
+
+
+/* ----------------- Setup responsive ----------------- */
+
+@media only screen and (max-width: 1140px) {
+  .a_menudesktop{display: none;}
+  .a_menumobile{display: block;}
+  .linksocialmedia img{width: 24px;opacity:0.5;}
+  .emaildiv{display:none;}
+}
+
